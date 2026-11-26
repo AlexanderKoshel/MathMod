@@ -1,0 +1,626 @@
+{
+  "variant": 10,
+  "n": 1000,
+  "alpha": 0.05,
+  "seed": 2026,
+  "parameters": {
+    "normal_mean": 1,
+    "normal_variance": 9,
+    "lognormal_log_mean": 1,
+    "lognormal_log_variance": 9,
+    "exponential_rate": 2
+  },
+  "moments": {
+    "Normal": {
+      "sample_mean": 1.155725975803289,
+      "sample_variance": 9.363291902218277,
+      "true_mean": 1.0,
+      "true_variance": 9.0
+    },
+    "Lognormal": {
+      "sample_mean": 142.32511232663592,
+      "sample_variance": 1877607.274490757,
+      "true_mean": 244.69193226422036,
+      "true_variance": 485105321.26807505
+    },
+    "Exponential": {
+      "sample_mean": 0.5044342772754854,
+      "sample_variance": 0.2661110419382167,
+      "true_mean": 0.5,
+      "true_variance": 0.25
+    }
+  },
+  "cross_checks": {
+    "Normal": {
+      "Normal": {
+        "kolmogorov": {
+          "d": 0.029767819398329176,
+          "d_plus": 0.009230389203824962,
+          "d_minus": 0.029767819398329176,
+          "p_value": 0.33170105543220196,
+          "critical": 0.042776500461245,
+          "reject_h0": false
+        },
+        "pearson": {
+          "statistic": 8.02,
+          "p_value": 0.5321319602760293,
+          "counts": [
+            90,
+            109,
+            103,
+            89,
+            90,
+            95,
+            96,
+            111,
+            102,
+            115
+          ],
+          "critical": 16.918977604620448,
+          "df": 9,
+          "reject_h0": false,
+          "outside_support": false
+        }
+      },
+      "Lognormal": {
+        "kolmogorov": {
+          "d": 0.365,
+          "d_plus": 0.365,
+          "d_minus": 0.0,
+          "p_value": 6.400334768807128e-120,
+          "critical": 0.042776500461245,
+          "reject_h0": true
+        },
+        "pearson": {
+          "statistic": null,
+          "p_value": 0.0,
+          "counts": [
+            372,
+            16,
+            43,
+            89,
+            172,
+            244,
+            64,
+            0,
+            0,
+            0
+          ],
+          "critical": 16.918977604620448,
+          "df": 9,
+          "reject_h0": true,
+          "outside_support": true
+        }
+      },
+      "Exponential": {
+        "kolmogorov": {
+          "d": 0.4079639375683798,
+          "d_plus": 0.365,
+          "d_minus": 0.4079639375683798,
+          "p_value": 5.802342841027971e-151,
+          "critical": 0.042776500461245,
+          "reject_h0": true
+        },
+        "pearson": {
+          "statistic": null,
+          "p_value": 0.0,
+          "counts": [
+            371,
+            8,
+            7,
+            6,
+            12,
+            14,
+            18,
+            25,
+            39,
+            500
+          ],
+          "critical": 16.918977604620448,
+          "df": 9,
+          "reject_h0": true,
+          "outside_support": true
+        }
+      }
+    },
+    "Lognormal": {
+      "Normal": {
+        "kolmogorov": {
+          "d": 0.3694671487413961,
+          "d_plus": 0.0,
+          "d_minus": 0.3694671487413961,
+          "p_value": 5.8040285167799175e-123,
+          "critical": 0.042776500461245,
+          "reject_h0": true
+        },
+        "pearson": {
+          "statistic": 1570.02,
+          "p_value": 0.0,
+          "counts": [
+            0,
+            0,
+            0,
+            218,
+            166,
+            65,
+            44,
+            42,
+            51,
+            414
+          ],
+          "critical": 16.918977604620448,
+          "df": 9,
+          "reject_h0": true,
+          "outside_support": false
+        }
+      },
+      "Lognormal": {
+        "kolmogorov": {
+          "d": 0.023425193754649687,
+          "d_plus": 0.023425193754649687,
+          "d_minus": 0.015141564722620626,
+          "p_value": 0.633960658424313,
+          "critical": 0.042776500461245,
+          "reject_h0": false
+        },
+        "pearson": {
+          "statistic": 14.419999999999998,
+          "p_value": 0.10814977025924806,
+          "counts": [
+            122,
+            88,
+            100,
+            103,
+            87,
+            105,
+            81,
+            115,
+            103,
+            96
+          ],
+          "critical": 16.918977604620448,
+          "df": 9,
+          "reject_h0": false,
+          "outside_support": false
+        }
+      },
+      "Exponential": {
+        "kolmogorov": {
+          "d": 0.5250849676418747,
+          "d_plus": 0.028152527211604522,
+          "d_minus": 0.5250849676418747,
+          "p_value": 2.2226156210965554e-257,
+          "critical": 0.042776500461245,
+          "reject_h0": true
+        },
+        "pearson": {
+          "statistic": 2757.4799999999996,
+          "p_value": 0.0,
+          "counts": [
+            113,
+            43,
+            38,
+            27,
+            27,
+            32,
+            35,
+            39,
+            53,
+            593
+          ],
+          "critical": 16.918977604620448,
+          "df": 9,
+          "reject_h0": true,
+          "outside_support": false
+        }
+      }
+    },
+    "Exponential": {
+      "Normal": {
+        "kolmogorov": {
+          "d": 0.39446241158249506,
+          "d_plus": 0.39446241158249506,
+          "d_minus": 0.36947605015080565,
+          "p_value": 8.947038527744641e-141,
+          "critical": 0.042776500461245,
+          "reject_h0": true
+        },
+        "pearson": {
+          "statistic": 2907.9400000000005,
+          "p_value": 0.0,
+          "counts": [
+            0,
+            0,
+            0,
+            379,
+            486,
+            101,
+            27,
+            5,
+            1,
+            1
+          ],
+          "critical": 16.918977604620448,
+          "df": 9,
+          "reject_h0": true,
+          "outside_support": false
+        }
+      },
+      "Lognormal": {
+        "kolmogorov": {
+          "d": 0.5335057602378913,
+          "d_plus": 0.5335057602378913,
+          "d_minus": 0.021412427810045404,
+          "p_value": 2.208286652266262e-266,
+          "critical": 0.042776500461245,
+          "reject_h0": true
+        },
+        "pearson": {
+          "statistic": 1389.8,
+          "p_value": 1.2360559499139479e-293,
+          "counts": [
+            122,
+            229,
+            326,
+            245,
+            73,
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "critical": 16.918977604620448,
+          "df": 9,
+          "reject_h0": true,
+          "outside_support": false
+        }
+      },
+      "Exponential": {
+        "kolmogorov": {
+          "d": 0.0184779004604273,
+          "d_plus": 0.01246502148000593,
+          "d_minus": 0.0184779004604273,
+          "p_value": 0.8778913664721097,
+          "critical": 0.042776500461245,
+          "reject_h0": false
+        },
+        "pearson": {
+          "statistic": 13.800000000000002,
+          "p_value": 0.12961959133276182,
+          "counts": [
+            109,
+            79,
+            111,
+            99,
+            91,
+            101,
+            121,
+            90,
+            107,
+            92
+          ],
+          "critical": 16.918977604620448,
+          "df": 9,
+          "reject_h0": false,
+          "outside_support": false
+        }
+      }
+    }
+  },
+  "pearson_cuts": {
+    "Normal": [
+      -2.844654696633801,
+      -1.5248637007187424,
+      -0.5732015381241227,
+      0.23995869059260078,
+      1.0,
+      1.7600413094073992,
+      2.5732015381241222,
+      3.524863700718743,
+      4.8446546966338015
+    ],
+    "Lognormal": [
+      0.05815434416401982,
+      0.2176507204803889,
+      0.5637177826313043,
+      1.2711966368570056,
+      2.718281828459045,
+      5.812677507706331,
+      13.10772220886884,
+      33.949146056681364,
+      127.05940037928015
+    ],
+    "Exponential": [
+      0.052680257828913155,
+      0.11157177565710488,
+      0.17833747196936622,
+      0.25541281188299536,
+      0.34657359027997264,
+      0.4581453659370775,
+      0.601986402162968,
+      0.8047189562170503,
+      1.151292546497023
+    ]
+  },
+  "type_i_error": {
+    "Normal": [
+      {
+        "repetitions": 100,
+        "kolmogorov": {
+          "rejections": 5,
+          "rate": 0.05,
+          "ci_low": 0.01643187918172828,
+          "ci_high": 0.11283491110546288
+        },
+        "pearson": {
+          "rejections": 5,
+          "rate": 0.05,
+          "ci_low": 0.01643187918172828,
+          "ci_high": 0.11283491110546288
+        }
+      },
+      {
+        "repetitions": 500,
+        "kolmogorov": {
+          "rejections": 25,
+          "rate": 0.05,
+          "ci_low": 0.032615180149323596,
+          "ci_high": 0.07292762165047906
+        },
+        "pearson": {
+          "rejections": 28,
+          "rate": 0.056,
+          "ci_low": 0.03753044447493997,
+          "ci_high": 0.07992130060427861
+        }
+      },
+      {
+        "repetitions": 1000,
+        "kolmogorov": {
+          "rejections": 49,
+          "rate": 0.049,
+          "ci_low": 0.03646705917195328,
+          "ci_high": 0.06426605314016967
+        },
+        "pearson": {
+          "rejections": 60,
+          "rate": 0.06,
+          "ci_low": 0.046095035422484346,
+          "ci_high": 0.07656049040407746
+        }
+      },
+      {
+        "repetitions": 2000,
+        "kolmogorov": {
+          "rejections": 107,
+          "rate": 0.0535,
+          "ci_low": 0.04404871301914261,
+          "ci_high": 0.06428544270906772
+        },
+        "pearson": {
+          "rejections": 106,
+          "rate": 0.053,
+          "ci_low": 0.04359304359257641,
+          "ci_high": 0.06374279299877268
+        }
+      },
+      {
+        "repetitions": 5000,
+        "kolmogorov": {
+          "rejections": 268,
+          "rate": 0.0536,
+          "ci_low": 0.047519309154614234,
+          "ci_high": 0.06020823108143681
+        },
+        "pearson": {
+          "rejections": 255,
+          "rate": 0.051,
+          "ci_low": 0.04506576097106586,
+          "ci_high": 0.05746510928054938
+        }
+      }
+    ],
+    "Lognormal": [
+      {
+        "repetitions": 100,
+        "kolmogorov": {
+          "rejections": 3,
+          "rate": 0.03,
+          "ci_low": 0.006229971538306227,
+          "ci_high": 0.08517605297428034
+        },
+        "pearson": {
+          "rejections": 3,
+          "rate": 0.03,
+          "ci_low": 0.006229971538306227,
+          "ci_high": 0.08517605297428034
+        }
+      },
+      {
+        "repetitions": 500,
+        "kolmogorov": {
+          "rejections": 29,
+          "rate": 0.058,
+          "ci_low": 0.039183868797167266,
+          "ci_high": 0.082238220893674
+        },
+        "pearson": {
+          "rejections": 23,
+          "rate": 0.046,
+          "ci_low": 0.029380175392491138,
+          "ci_high": 0.06822542788084066
+        }
+      },
+      {
+        "repetitions": 1000,
+        "kolmogorov": {
+          "rejections": 61,
+          "rate": 0.061,
+          "ci_low": 0.046977875541079704,
+          "ci_high": 0.0776707740491406
+        },
+        "pearson": {
+          "rejections": 47,
+          "rate": 0.047,
+          "ci_low": 0.034735062266795375,
+          "ci_high": 0.062012630693071356
+        }
+      },
+      {
+        "repetitions": 2000,
+        "kolmogorov": {
+          "rejections": 104,
+          "rate": 0.052,
+          "ci_low": 0.042682439797337365,
+          "ci_high": 0.06265676793369496
+        },
+        "pearson": {
+          "rejections": 100,
+          "rate": 0.05,
+          "ci_low": 0.04086426771825672,
+          "ci_high": 0.06048172208311034
+        }
+      },
+      {
+        "repetitions": 5000,
+        "kolmogorov": {
+          "rejections": 247,
+          "rate": 0.0494,
+          "ci_low": 0.043558054085996244,
+          "ci_high": 0.055774877085477126
+        },
+        "pearson": {
+          "rejections": 251,
+          "rate": 0.0502,
+          "ci_low": 0.044311694398202046,
+          "ci_high": 0.056620205139250666
+        }
+      }
+    ],
+    "Exponential": [
+      {
+        "repetitions": 100,
+        "kolmogorov": {
+          "rejections": 10,
+          "rate": 0.1,
+          "ci_low": 0.049004689221485945,
+          "ci_high": 0.17622259774017535
+        },
+        "pearson": {
+          "rejections": 5,
+          "rate": 0.05,
+          "ci_low": 0.01643187918172828,
+          "ci_high": 0.11283491110546288
+        }
+      },
+      {
+        "repetitions": 500,
+        "kolmogorov": {
+          "rejections": 33,
+          "rate": 0.066,
+          "ci_low": 0.045863357110587734,
+          "ci_high": 0.09144289861086767
+        },
+        "pearson": {
+          "rejections": 18,
+          "rate": 0.036,
+          "ci_low": 0.021472856586093294,
+          "ci_high": 0.056300176201791216
+        }
+      },
+      {
+        "repetitions": 1000,
+        "kolmogorov": {
+          "rejections": 52,
+          "rate": 0.052,
+          "ci_low": 0.03907653494397995,
+          "ci_high": 0.06763501405052165
+        },
+        "pearson": {
+          "rejections": 38,
+          "rate": 0.038,
+          "ci_low": 0.027028815982975005,
+          "ci_high": 0.05178710362196557
+        }
+      },
+      {
+        "repetitions": 2000,
+        "kolmogorov": {
+          "rejections": 96,
+          "rate": 0.048,
+          "ci_low": 0.039050337055692386,
+          "ci_high": 0.058302492341147455
+        },
+        "pearson": {
+          "rejections": 85,
+          "rate": 0.0425,
+          "ci_low": 0.03408607459315085,
+          "ci_high": 0.05228591324237602
+        }
+      },
+      {
+        "repetitions": 5000,
+        "kolmogorov": {
+          "rejections": 256,
+          "rate": 0.0512,
+          "ci_low": 0.04525434309951185,
+          "ci_high": 0.05767627018670116
+        },
+        "pearson": {
+          "rejections": 247,
+          "rate": 0.0494,
+          "ci_low": 0.043558054085996244,
+          "ci_high": 0.055774877085477126
+        }
+      }
+    ]
+  },
+  "type_i_error_n10000": {
+    "Normal": {
+      "repetitions": 1000,
+      "kolmogorov": {
+        "rejections": 49,
+        "rate": 0.049,
+        "ci_low": 0.03646705917195328,
+        "ci_high": 0.06426605314016967
+      },
+      "pearson": {
+        "rejections": 48,
+        "rate": 0.048,
+        "ci_low": 0.035600265342890035,
+        "ci_high": 0.06314011540157663
+      }
+    },
+    "Lognormal": {
+      "repetitions": 1000,
+      "kolmogorov": {
+        "rejections": 45,
+        "rate": 0.045,
+        "ci_low": 0.03300962543114874,
+        "ci_high": 0.05975283269341044
+      },
+      "pearson": {
+        "rejections": 47,
+        "rate": 0.047,
+        "ci_low": 0.034735062266795375,
+        "ci_high": 0.062012630693071356
+      }
+    },
+    "Exponential": {
+      "repetitions": 1000,
+      "kolmogorov": {
+        "rejections": 63,
+        "rate": 0.063,
+        "ci_low": 0.04874692755658057,
+        "ci_high": 0.07988804187335559
+      },
+      "pearson": {
+        "rejections": 50,
+        "rate": 0.05,
+        "ci_low": 0.03733539760466065,
+        "ci_high": 0.06539048791549366
+      }
+    }
+  }
+}
