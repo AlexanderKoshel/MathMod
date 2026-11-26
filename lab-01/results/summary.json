@@ -1,0 +1,88 @@
+{
+  "parameters": {
+    "variant": 10,
+    "a0": 16807,
+    "beta": 16807,
+    "modulus": 2147483648,
+    "k": 64,
+    "n": 1000,
+    "alpha": 0.05,
+    "selector_seed": 2026
+  },
+  "results": {
+    "MKM": {
+      "n": 1000,
+      "mean": 0.4932724045664072,
+      "sample_variance": 0.08305936045886761,
+      "minimum": 0.0013675619848072529,
+      "maximum": 0.9925947668962181,
+      "kolmogorov": {
+        "d_plus": 0.025725302230566738,
+        "d_minus": 0.0048085785917937746,
+        "d": 0.025725302230566738,
+        "sqrt_n_d": 0.8135054854480097,
+        "critical_d": 0.042776500461245,
+        "p_value": 0.5140113110881486,
+        "reject_h0": false
+      },
+      "pearson": {
+        "bins": 10,
+        "counts": [
+          103,
+          103,
+          110,
+          109,
+          79,
+          102,
+          97,
+          96,
+          106,
+          95
+        ],
+        "expected_count": 100.0,
+        "degrees_of_freedom": 9,
+        "statistic": 7.3,
+        "critical_value": 16.918977604620448,
+        "p_value": 0.6059162118046402,
+        "reject_h0": false
+      }
+    },
+    "MacLaren-Marsaglia": {
+      "n": 1000,
+      "mean": 0.4950062167188153,
+      "sample_variance": 0.08341339653439246,
+      "minimum": 0.0013675619848072529,
+      "maximum": 0.9925947668962181,
+      "kolmogorov": {
+        "d_plus": 0.023725302230566736,
+        "d_minus": 0.007847673762589658,
+        "d": 0.023725302230566736,
+        "sqrt_n_d": 0.750259932244642,
+        "critical_d": 0.042776500461245,
+        "p_value": 0.6179851282720376,
+        "reject_h0": false
+      },
+      "pearson": {
+        "bins": 10,
+        "counts": [
+          103,
+          101,
+          110,
+          109,
+          80,
+          101,
+          96,
+          94,
+          110,
+          96
+        ],
+        "expected_count": 100.0,
+        "degrees_of_freedom": 9,
+        "statistic": 7.6,
+        "critical_value": 16.918977604620448,
+        "p_value": 0.5749034238644555,
+        "reject_h0": false
+      }
+    }
+  }
+}
